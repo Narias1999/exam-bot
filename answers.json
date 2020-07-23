@@ -1,6 +1,8 @@
 {
   "question text": {
     "correct": "",
-    "selected": [""]
+    "selected": {
+      "option text": 0
+    }
   }
 }
