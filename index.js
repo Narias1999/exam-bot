@@ -39,8 +39,8 @@ async function crackTheCode(courseURL) {
   await page.goto(courseURL);
   const inQuetions = await mailAuth(
     page,
-    'nicolasarias870@gmail.com',
-    'pl3aseletmein'
+    'mail',
+    'pass'
   );
   if (!inQuetions) {
     await page.click('.Buttons-btn.btn.btn-green');
