@@ -57,15 +57,16 @@ async function crackTheCode(courseURL) {
     if (res === 'awake') break;
 
     const question = await getQuestion(page);
-    console.log(question);
+    console.log(`Question: `, question);
     const { options, elOptions } = await getOptions(page);
-    console.log(options);
+    console.log('Options:', options);
     let index = 0;
 
     const q = preparedData[question];
     if (q) {
       if (q.hasOwnProperty('correct')) {
         await elOptions[q.correct].click();
+        console.log('Option already correct: ', options[q.correct]);
         await page.click('.btn-Sky.questionNext');
         await sleep(3000);
         continue;
@@ -74,7 +75,7 @@ async function crackTheCode(courseURL) {
       index = q.current + 1;
     }
 
-    console.log('index to select', index, options[index]);
+    console.log('selected option', options[index]);
 
     if (q) {
       preparedData[question] = {
@@ -92,7 +93,6 @@ async function crackTheCode(courseURL) {
         current: index,
       };
     }
-    console.log(preparedData);
     await elOptions[index].click();
     await page.click('.btn-Sky.questionNext');
     await sleep(3000);
@@ -107,6 +107,6 @@ async function crackTheCode(courseURL) {
 }
 
 const courseURL =
-  'https://platzi.com/clases/examen/0f4df2bb-eea0-4ba4-83d2-a5aa3f0d5d27/examen_usuario/';
+  'https://platzi.com/clases/examen/694c36c6-6e2b-4317-a33d-cd9d5290e2d6/examen_usuario/';
 
 crackTheCode(courseURL);
