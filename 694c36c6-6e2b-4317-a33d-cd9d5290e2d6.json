@@ -1,0 +1,242 @@
+{
+  "¿Qué tenemos que hacer para poder dividir nuestro modelo en múltiples archivos?": {
+    "selected": {
+      "Al igual que un módulo de Python, crear un folder models con un __init__.py que exponga los modelos de los archivos individuales.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Tu aplicación realiza múltiples tareas de manera constante dependiendo el recurso que se esté accediendo, por ejemplo tareas como Administrador, tareas como Profesor, tareas como Político. Realmente los datos de cada uno de estos usuarios son exactamente los mismos y no existe diferencie dentro de la base de datos, todos viven bajo el esquema de “Humano”. Si quieres agrupar este comportamiento por “tipos de usuario”, ¿qué tipo de herencia de usuarios deberías ocupar? Justifica.": {
+    "selected": {
+      "Herencia con modelos proxy porque podemos tener instancias de Administrador en la base de datos sin que necesariamente exista una instancia Humano a la cuál estos estén asociados": 0,
+      "Herencia con modelos proxy ya que únicamente estamos añadiendo funcionalidad a los mismos datos": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "Este tipo de autenticación es el más apropiado para configuraciones del tipo cliente-servidor, tal como aplicaciones nativas de escritorio o aplicaciones móviles.": {
+    "selected": {
+      "Basic Authentication": 0,
+      "JWT Authentication": 1,
+      "Key-value Authentication": 2
+    },
+    "current": 2
+  },
+  "required, allow_null, source, initial y validators son atributos de la clase:": {
+    "selected": {
+      "APIView": 0,
+      "CharField": 1,
+      "Field": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "Estás trabajando en un proyecto que registra lugares y por cada lugar registras datos como nombre y dirección. Eventualmente deciden que quieren registrar restaurantes y que estos restaurantes almacenarán los mismos datos de un lugar, más datos como horario y menú. En la plataforma pueden existir lugares que no sean restaurantes, restaurantes que pertenezcan a un lugar y restaurantes que tengan nombre y dirección pero no estén registrados como lugar. Usando herencia de modelos ¿Qué técnica de herencia creerías que es la más apropiada? Justifica.": {
+    "selected": {
+      "Usaría herencia con modelos proxy ya que de esta manera puedo mantener la clase de lugar limpia e ir generando múltiples clases de tipos de lugares como Bar, Cine, Parque, etcétera.": 0,
+      "Usaría herencia con modelos proxy ya que la definición de restaurante es similar a la de lugar y simplemente queremos agregar funciones adicionales": 1,
+      "Usaría herencia de modelos abstractos teniendo una clase con datos generales (abstracta), una que no tenga más datos que represente el lugar (hija) y otra que represente los restaurantes con sus datos adicionales (hija)": 2
+    },
+    "current": 2
+  },
+  "Si queremos definir el comportamiento de una clase que herede de Serializer cuando se mande a llamar el método save() debemos:": {
+    "selected": {
+      "Implementar el método save() ya que no es un método que exista por default en un Serializer": 0,
+      "Llamar a is_valid() desde la instancia del serializer antes de llamar a save() para poder editar el comportamiento desde validate()": 1,
+      "Sobreescribir el método save()": 2
+    },
+    "current": 2
+  },
+  "¿Qué desventajas tiene JWT?": {
+    "selected": {
+      "Que es un estándar nuevo y muy poca gente lo utiliza por lo que puede ser complicado que nuevos clientes lo adopten": 0,
+      "Que la mayoría de las implementaciones no siguen la definición oficial del estándar RFC 7519 y suelen incluir vulnerabilidades en la verificación de la firma criptográfica": 1,
+      "Que la parte del header del token expone explícitamente el algoritmo de hashing utilizado y puede ser manipulado para burlar algunas implementaciones débiles del estándar.": 2
+    },
+    "current": 2
+  },
+  "Cuando se está deserializando información siempre…": {
+    "selected": {
+      "Se ejecutan las validaciones de cada campo": 0,
+      "Se obtiene una lista de los datos equivalentes a los descritos por el serializer.": 1,
+      "Se tiene que llama a is_valid() primero": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "Este principio habla acerca de como una app puede convertirse en el “backing service” de cualquier otra app.": {
+    "selected": {
+      "Codebase": 0,
+      "Dev/prod parity": 1,
+      "Build, release, run": 2
+    },
+    "current": 2
+  },
+  "Docker es utilizado durante el curso porque…": {
+    "selected": {
+      "Es fácil de instalar en todos los entornos (UNIX y Windows) y evita que los programadores tengan que instalar las dependencias del proyecto manualmente en su computadora": 0,
+      "Es una herramienta que cada vez está más presente en el mercado y facilita el control y distribución de nuestro proyecto": 1,
+      "Es usado en el django-cookiecutter de pydanny el cuál sigue los principios de una twelve-factor app": 2
+    },
+    "current": 2
+  },
+  "¿Cuál es la función de django-environ?": {
+    "selected": {
+      "Nos ahorra tener que escribir los datos completos de conexión a la base de datos": 0,
+      "Nos da la posibilidad de exponer la llave secreta de Django siempre y cuando esté corriendo en el entorno de desarrollo": 1,
+      "Nos permite realizar operaciones aritméticas y lógicas con los directorios de un sistema de archivos": 2
+    },
+    "current": 2
+  },
+  "Incluir la propiedad exp en el payload del token nos permite": {
+    "selected": {
+      "Cifrar los datos que están incluídos en el Payload": 0,
+      "Exportar el valor del token a múltiples encodings": 1,
+      "Realizar una validación automática de la fecha de expiración de un token generado por rest_framework.authtoken": 2
+    },
+    "current": 2
+  },
+  "“Permite convertir tipos de datos complejos como querysets e instancias de clases a datos nativos de Python” describe mejor a:": {
+    "selected": {
+      "APIViews": 0,
+      "Decoradores": 1,
+      "GenericAPIViews": 2
+    },
+    "current": 2
+  },
+  "¿“Todas las aplicaciones de Django deberían usar la misma configuración que este proyecto” es una declaración falsa o verdadera? Justifica": {
+    "selected": {
+      "Falsa, la configuración actual es útil para nuestro caso particular aunque definitivamente todas las aplicaciones de Django deberían empezar con este setup": 0,
+      "Falsa, la configuración actual es útil para nuestro caso particular y puede ser para la mayoría pero eventualmente cada proyecto tendrá necesidades diferentes": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Por qué heredamos de AbstractUser cuando queremos extender datos del usuario?": {
+    "selected": {
+      "Porque además de cambiar datos queremos editar el comportamiento de algunos datos fundamentales como el username. Además, es altamente recomendado para proyectos que van iniciando.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Por qué no se debe usar autenticación por medio de sesiones cuando se está creando un REST API?": {
+    "selected": {
+      "Porque las sesiones son obsoletas y se ha demostrado que pueden ser extraídas de los clientes con mucha facilidad": 0,
+      "Porque una sesión está ligada a clientes web únicamente y sería imposible generarlas en otro tipo de clientes": 1,
+      "Sí se puede usar mientras que las sesiones no sean utilizadas como una fuente de almacenamiento de estados. El objetivo de un REST API es permanecer stateless": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Cuándo es útil usar request.user y cuándo es útil usar request.auth?": {
+    "selected": {
+      "request.auth es útil cuando se están implementando métodos personalizados de autenticación y request.user sólo puede ser usado en autentiocaión básica o basada en cookies.": 0,
+      "request.auth sólamente sirve durante el momento de autenticación y request.user identifica al usuario que está haciendo la petición": 1,
+      "request.user regresa una instancia de AnonymousUser cuando no hay una sesión iniciada y request.auth regresa None cuando no existe una sesión": 2
+    },
+    "current": 2
+  },
+  "Un campo de un Serializer puede ser…": {
+    "selected": {
+      "Cambiar de tipo de campo dependiendo si se instancia como partial o no": 0,
+      "Ignorado si se usa partial": 1,
+      "Otro serializer": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "La frase “Una twelve-factor app no hace distinciones entre local y producción cuando se trata acerca de ellos, una twelve-factor app realiza la conexión y desconexión de manera indiferente” ¿A qué principio se refiere?": {
+    "selected": {
+      "Dependencies": 0,
+      "Backing services": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Cuál es la diferencia entre request.data y request.query_params": {
+    "selected": {
+      "request.data es lo mismo que request.query_params pero sólo está incluido en las vistas que tienen un Serializer": 0,
+      "request.data regresa el contenido “parseado” de la peticiones POST, PUT y PATCH. request.query_params es equivalente al anterior pero sólo de peticiones GET": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Qué ventaja tiene usar APIView sobre View cuando estamos construyendo las vistas basadas en clases de un API?": {
+    "selected": {
+      "APIView nos permite tratar las peticiones como instancias del la clase Request, aplicar las reglas de autenticación y permisos correspondientes, y puede transformar excepciones del tipo APIException en respuestas HTTP": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "“Resources over actions” se refiere a:": {
+    "selected": {
+      "Que cuando una acción de un API es costosa, los recursos de los servidores se deben tomar en cuenta como principal prioridad": 0,
+      "Que las URLs de un API deben estar en función de sus esquemas de datos y no en función de las acciones que puedes realizar en ellos": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "Completa la oración: “A través del archivo local.yml podemos…”": {
+    "selected": {
+      "Definir el conjunto de servicios que conforman la aplicación de Django, así como la dependencia entre ellos y las formas en que se deben configurar": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué función tiene el decorador @api_view sobre una vista basada en una función?": {
+    "selected": {
+      "Evita que tengamos que regresar objeto de la clase JsonResponse ya que automáticamente todo contenido que regrese la función será en formato JSON": 0,
+      "Permite que el contenido sea parseado en cualquier formato pero únicamente puedes regresar contenido JSON": 1,
+      "Se asegura que la función reciba un request de tipo Request y permite que la vista regrese un response de tipo Response": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "“Estos son una serie de clases que permiten aceptar múltiples tipos de contenido mientras que el opuesto te permite responder a peticiones con diferentes formatos” se refiere a": {
+    "selected": {
+      "Parsers y renderers respectivamente": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Estás realizando la migración de datos de una plataforma como Firebase a una base de datos real usando Django. Has diseñado ya un esquema que puede representar los datos de manera correcta y te das cuenta que existen múltiples datos que te gustaría guardar por cada registro, datos como ID en Firebase, fecha de creación en Firebase y clase del Documento del que proviene. Usando herencia de clases, ¿de qué manera implementarías una solución para almacenar esos datos? Justifica": {
+    "selected": {
+      "Usaría herencia con modelos proxy porque así podría escribir rutinas particulares sólo para manipular los datos de Firebase sin afectar al modelo principal": 0,
+      "Usaría herencia de modelos abstractos porque así puedo controlar la manera en la que se almacenan los documentos": 1,
+      "Usaría herencia de modelos abstractos porque evitará que tenga que escribir esos datos en cada modelo de la aplicación.": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "Es el mecanismo por el cual se asocia una petición entrante a un conjunto de credenciales": {
+    "selected": {
+      "Autenticación": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Quieres que los datos de tu aplicación puedan ser accesados por otras aplicaciones siempre y cuando el dueño de los datos haya autorizado su uso. ¿Qué tipo de autenticación será la más adecuada para este caso? Justifica": {
+    "selected": {
+      "JWT porque así el mismo token puede contener la información de acceso dentro del Payload y no necesitaríamos persistir esos valores localmente": 0,
+      "JWT porque las firmas criptográficas únicamente pueden ser verificadas por el servidor y de esta manera las aplicaciones con acceso a los datos no podrían modificar el alcance del acceso a sus datos": 1,
+      "OAuth porque es lo que Facebook usa para permitir el acceso de aplicaciones de terceros a sus datos de usuarios": 2
+    },
+    "current": 2
+  },
+  "Facilita el envío de emails a través de múltiples proveedores del servicio como Sendgrid, Mailgun, etc. Permite utilizar la misma interfaz entre los múltiples proveedores": {
+    "selected": {
+      "Django Anymail": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Cuál es la diferencia entre Request y HttpRequest?": {
+    "selected": {
+      "HttpRequest es la clase que se encarga del parsing de las peticiones HTTP, es proveída por Django REST Framework y hereda de Request proveída por Django": 0,
+      "HttpRequest es la clase que se encarga del parsing de las peticiones HTTP, es proveída por Django y hereda de Request proveída por Django REST Framework": 1,
+      "Request es la clase que se encarga del parsing de las peticiones HTTP, es proveída por Django REST Framework y hereda de HttpRequest proveída por Django": 2
+    },
+    "current": 2,
+    "correct": 2
+  }
+}
