@@ -1,0 +1,218 @@
+{
+  "Es importante crear ROLES y dejar de usar el predeterminado de Postgres porque:": {
+    "selected": {
+      "Permite conectarse con bases de datos remotas.": 0,
+      "Permite analizar las consultas que más tardan en ejecutarse.": 1
+    },
+    "current": 1
+  },
+  "¿Los TRIGGERS pueden ser usados para ignorar inserts?": {
+    "selected": {
+      "Sí. Se usa con AFTER y RETURN NULL.": 0,
+      "Sí. Se usa con BEFORE y RETURN NEW.": 1
+    },
+    "current": 1
+  },
+  "¿Cuál es el comando que nos muestra la lista de todos los comandos tipo backslash disponibles en la consola?": {
+    "selected": {
+      "\\h": 0,
+      "\\help": 1
+    },
+    "current": 1
+  },
+  "Vacuum Full es peligroso porque:": {
+    "selected": {
+      "Bloquea las tablas durante el proceso.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Es posible actualizar la información en una réplica?": {
+    "selected": {
+      "Verdadero": 0,
+      "Falso": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "ON CONFLICT DO nos permite:": {
+    "selected": {
+      "Resolver conflictos al ejecutar dos o más transacciones en paralelo.": 0,
+      "Re-escribir la información de un ROL si ya existe o no hacer nada.": 1
+    },
+    "current": 1
+  },
+  "Con PgAdmin sólo puedes modificar la estructura de base de datos de manera visual, no hay editor de código.": {
+    "selected": {
+      "Falso": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Cuáles son los 3 archivos principales de configuración de PostgreSQL?": {
+    "selected": {
+      "init.conf, services.conf y ports.conf.": 0,
+      "pgsql.conf, pgadmin.conf y pgdump.conf.": 1
+    },
+    "current": 1
+  },
+  "La creación de llaves primarias y llaves foráneas en una tabla sólo se puede hacer con el comando CREATE TABLE.": {
+    "selected": {
+      "Falso": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Dos comandos de cierre para una transacción son:": {
+    "selected": {
+      "SUBMIT y RESET": 0,
+      "BEGIN y END": 1
+    },
+    "current": 1
+  },
+  "¿Cuál de los siguientes tipos de datos permite texto?": {
+    "selected": {
+      "Character Varying": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "La principal limitación de rendimiento que tenemos en bases de datos es:": {
+    "selected": {
+      "Los roles de usuario": 0,
+      "Los tipos de datos": 1
+    },
+    "current": 1
+  },
+  "¿Cuáles dos acciones podemos capturar de una tabla maestra usando llaves foráneas?": {
+    "selected": {
+      "Al activar y desactivar.": 0,
+      "Al crear y eliminar roles.": 1
+    },
+    "current": 1
+  },
+  "Para alivianar los IOPS de la base de datos podemos:": {
+    "selected": {
+      "Todas son correctas.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Podemos usar DBLINK en medio de una consulta": {
+    "selected": {
+      "Falso": 0,
+      "Verdadero": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿En una PL/PgSQL se puede ejecutar código tanto SQL cómo no SQL?": {
+    "selected": {
+      "No. Las PL sólo ejecutan código propio de Postgresql, no de SQL.": 0,
+      "No, las PL sólo ejecutan código SQL estándar y no código Posgresql.": 1,
+      "Si. Siempre y cuando el lenguaje indicado sa plagsql": 2
+    },
+    "current": 2
+  },
+  "La única forma de insertar datos en una tabla usando un generador de datos aleatoreos es:": {
+    "selected": {
+      "CSV": 0,
+      "No existe una única forma.": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿En qué consiste la creación de particiones de una tabla en Postgresql?": {
+    "selected": {
+      "Dividir lo que es lógicamente una tabla grande en piezas físicas más pequeñas.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "La relación entre objetos tangibles normalmente se traduce en:": {
+    "selected": {
+      "Una tabla sin relaciones.": 0,
+      "Un ROL de base de datos.": 1
+    },
+    "current": 1
+  },
+  "Las replicas funcionan usando:": {
+    "selected": {
+      "Roles de replicación.": 0,
+      "Copias de seguridad.": 1
+    },
+    "current": 1
+  },
+  "Un forma de representar relaciones entre tablas es por medio de:": {
+    "selected": {
+      "Condicionales tipo UNIQUE.": 0,
+      "Llaves de Roles.": 1
+    },
+    "current": 1
+  },
+  "El tipo de dato SERIAL sirve para:": {
+    "selected": {
+      "Crear valores consecutivos para una columna.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "En la teoría de conjuntos, el INNER JOIN corresponde a:": {
+    "selected": {
+      "Intersección": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "La principal diferencia entre Vistas y Vistas Materializadas es:": {
+    "selected": {
+      "La Vista almacena datos en cache. La Vista Materializada almacena los datos en Disco.": 0,
+      "No hay diferencia. Las Vistas y Vistas Materializadas son dos formas de llamar a lo mismo.": 1
+    },
+    "current": 1
+  },
+  "Las extensiones nos permiten:": {
+    "selected": {
+      "Identificar los tipos de archivos que podemos crear.": 0,
+      "Extender la funcionalidad de PostgreSQL.": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Qué formato debes usar si queremos ver la consulta equivalente a nuestra base de datos al momento de hacer Backup?": {
+    "selected": {
+      "Directory": 0,
+      "Tar": 1,
+      "Plain": 2
+    },
+    "current": 2
+  },
+  "¿Es posible usar bloques condicionales de tipo IF en una consulta de PostgreSQL?": {
+    "selected": {
+      "No. Sólo se puede en PL.": 0,
+      "Sí. Usando la palabra IF.": 1
+    },
+    "current": 1
+  },
+  "¿Qué es Postgresql?": {
+    "selected": {
+      "Ninguna de las anteriores.": 0,
+      "Un servidor de base de datos.": 1
+    },
+    "current": 1
+  },
+  "¿Cuál versión de PostgreSQL es recomentable instalar?": {
+    "selected": {
+      "Revisar la fecha y no descargar la última versión si es muy reciente.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Cuál comando nos sirve para activar la medición de tiempo de las consultas en la consola?": {
+    "selected": {
+      "\\watch": 0,
+      "\\q -t": 1
+    },
+    "current": 1
+  }
+}

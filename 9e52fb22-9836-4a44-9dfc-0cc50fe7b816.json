@@ -1,0 +1,234 @@
+{
+  "¿Qué es el dashboard de administración de Django?": {
+    "selected": {
+      "Es una aplicación escrita por la comunidad de Python y Django que se instala por separado e incluye una interfaz gráfica hecha con Bootstrap para poder administrar los datos de los modelos de un proyecto": 0,
+      "Es una aplicación que Django incluye durante la instalación que nos permite administrar la estructura de las tablas de un proyecto": 1,
+      "Es un módulo de Python que incluye código HTML para poder cambiar las propiedades de una tabla de una base de datos así como registrar nuevas tablas y se instala agregando el string django.contrib.admin a la variable INSTALLED_APPS en el archivo settings.py": 2
+    },
+    "current": 2
+  },
+  "¿Qué es un middleware?": {
+    "selected": {
+      "Son clases que Django provee y nos permiten aplicar validaciones de un request antes de que llegue a la vista": 0,
+      "Son funciones que Django provee y nos permite aplicar validaciones de un request antes de que llegue a la vista": 1,
+      "Es un sistema de plugins de bajo nivel que permite alterar la entrada o salida de Django a través del procesamiento de una petición HTTP": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Cómo es que Django nos permite interactuar con los datos originales de una petición HTTP?": {
+    "selected": {
+      "A través de un diccionario que representa el HTTP Request que ocasionó la ejecución de la vista.": 0,
+      "A través de una instancia de la clase HttpRequest que es pasada en cada vista como uno de los argumentos.": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Cómo se pintan los campos de un Form separados en párrafos?": {
+    "selected": {
+      "{{form.as_paragraph}}": 0,
+      "{{form.as_p}}": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Con qué bases de datos funciona el ORM de Django?": {
+    "selected": {
+      "Django puede trabajar con cualquier base de datos relacional ya que el ORM significa Object-relational mapper, es decir, que puede traducir cualquier esquema de base de datos relacional al una interfaz orientada a objetos": 0,
+      "El ORM está hecho para trabajar con bases de datos de tipo relacionar y por default puede trabajar con motores como: PostgreSQL, MySQL, SQLite3 y Oracle": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Cómo se agregan validaciones adicionales a un campo de un formulario?": {
+    "selected": {
+      "Sobreescribiendo el método clean": 0,
+      "Sobreescribiendo el método clean_field_name": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Qué es el MTV y qué significa?": {
+    "selected": {
+      "El MTV es el patrón de diseño adoptado por Django para la construcción de aplicaciones web. Define que durante el creación de un sitio el modelo será el encargado de estructurar los datos y controlar su acceso, el template será el encargado de contener toda la lógica para mostrar los datos y la vista la conexión entre estos dos encargado de procesar la petición, traer los datos y pasárselos al template.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Cuál es la diferencia entre las utilidades de django-admin y las de manage.py?": {
+    "selected": {
+      "django-admin nos permite acceder a operaciones de Django para la línea de comandos y manage.py nos permite acceder a las mismas operaciones pero todos los comandos son específicos al proyecto que contiene el archivo.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué método debe sobrescribirse en una vista que hereda de FormView para enviar un e-mail antes de salvar el formulario?": {
+    "selected": {
+      "valid_form": 0,
+      "is_form_valid": 1,
+      "form_is_valid": 2
+    },
+    "current": 2
+  },
+  "¿Qué problema resuelve Django?": {
+    "selected": {
+      "La creación de UIs web complejas que requieren del acceso a datos almacenados en una base de datos relacional.": 0,
+      "La creación de un proyecto web con múltiples especificaciones como: administración de una base de datos y creación de un servidor de desarrollo.": 1,
+      "La creación de un proyecto web con múltiples especificaciones como: interacción constante con una base de datos y manejo de peticiones HTTP.": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Qué concepto define mejor una aplicación en Django?": {
+    "selected": {
+      "También son conocidas como proyecto y es una forma de decirle a todo el código desarrollado usando Django que conforma un proyecto completo. Por ejemplo: Platzigram.": 0,
+      "Son los módulos que Django incluye por default al momento de crear un proyecto y ayudan con tareas como la autenticación de usuarios, el manejo de sesiones, el dashboard de administración, entre otras.": 1,
+      "Es un módulo de Python que incluye código encargado resolver la funcionalidad de un área específica de un proyecto, por ejemplo: las vistas, las URLs, las pruebas y los modelos que únicamente están relacionados a las publicaciones de los usuarios de un proyecto como Platzigram": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Qué es un modelo proxy?": {
+    "selected": {
+      "Aquel que usa una relación Uno a Uno para extender los datos de otro modelo": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué son los templates de Django?": {
+    "selected": {
+      "Es código de python que se puede incluir dentro del HTML usando la etiqueta <?python ?>": 0,
+      "Es la forma en la que Django permite escribir la lógica de presentación de los datos dentro de HTML usando una sintaxis especial.": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "Si deseamos consultar la lista de usuarios que se han creado dentro de los últimos 10 días, ¿Qué sentencia resuelve mejor el problema?": {
+    "selected": {
+      "User.objects.filter(created=ten_days_ago)": 0,
+      "[u for u in User.objects.all() if u.created >= ten_days_ago]": 1,
+      "User.objects.filter(created__gte=ten_days_ago)": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Cómo se puede acceder a los datos de una petición POST en Django?": {
+    "selected": {
+      "A través del atributo POST de una instancia del objeto HttpRequest el cual regresa una estructura similar a un diccionario de Python": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué es una migración?": {
+    "selected": {
+      "Es la acción de importar datos de una base de datos existente a otra con diferente esquema. Las migraciones describen las mutaciones que deben sufrir los datos para poderse transportar a otra base de datos.": 0,
+      "Es la acción de importar datos de una base de datos existente a otra que cuenta con el mismo esquema. Las migraciones están descritas en archivos de python dentro del folder migrations de cada aplicación": 1,
+      "Describen las operaciones que se tienen que realizar para agregar datos a la base de datos después de que los archivos de los modelos sufren un cambio. Estos archivos se crean automáticamente siempre y cuando el servidor de desarrollo esté corriendo.": 2
+    },
+    "current": 2
+  },
+  "¿Cómo se debe crear un entorno virtual en Python3 >= 3.4?": {
+    "selected": {
+      "python3 -m venv ENV_NAME": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué es un patrón de diseño?": {
+    "selected": {
+      "Es la forma que adopta la infraestructura que corre un proyecto": 0,
+      "Es el Model View Controller (MVC) o el Model Template View (MTV)": 1,
+      "Es una forma de ordenar los archivos de una aplicación": 2
+    },
+    "current": 2
+  },
+  "Si se tuviera una plataforma con donde el username principal de los usuarios es el email. ¿De qué manera se debería diseñar el modelo?": {
+    "selected": {
+      "A través de una clase que herede de users.User y sobrescriba el valor de username a un EmailField(unique=True)": 0,
+      "A través de una clase que extienda de AbstractBaseUser y redefiniendo la variable USERNAME_FIELD": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿De qué nos sirven los path converters y cuál es la diferencia con usar expresiones regulares?": {
+    "selected": {
+      "Los path converters son forma que Django tiene para registrar nuevas URLs que apuntan a nuestras vistas y las expresiones regulares son usadas dentro de los path converters para validar cosas como que un número o una fecha sean pasadas dentro de una URL.": 0,
+      "Los path converters hacen uso de una sintaxis especial para validar el tipo de datos pasados en las URLs y son diferentes a una expresión regular porque son más legibles y regresan el tipo de dato de Python listo para ser usado.": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Qué es una vista?": {
+    "selected": {
+      "Es el código llamado por la URL después de hacer el match del recurso solicitado y contiene toda la lógica para generar una respuesta HTTP con las operaciones necesarias como traer datos de la DB y pasarlos a un template para su presentación.": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "¿Qué son las vistas basadas en clases?": {
+    "selected": {
+      "Son funciones de Python que replican la funcionalidad de algunas clases de Django y pueden ser importadas desde cualquier archivo": 0,
+      "Son clases que están hechas para resolver un problema particular y son instanciadas desde la función de la vista para poder acceder a sus utilidades": 1,
+      "Son lo mismo que las vistas basadas en funciones pero estas son clases y reciben los argumentos (como el requests) en el método init": 2
+    },
+    "current": 2
+  },
+  "¿Cómo se modifican, crean o alteran las tablas la base de datos que usa el proyecto de Django?": {
+    "selected": {
+      "No se puede, el esquema de la base de datos tiene que ser definido desde el mismo motor usando las sentencias SQL correspondientes.": 0,
+      "A través de la línea de comandos podemos agregar campos, crear tablas y administrar toda la estructura de nuestra base de datos": 1,
+      "A través de la definición de clases de Python que representan una tabla de la base de datos relacional y propiedades de la clase que representan los campos de dicha tabla.": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Cuál es el rol de Django en los formularios?": {
+    "selected": {
+      "Proteger todas las peticiones entrantes contra ataques como Cross Site Scripting o SQL Injection": 0,
+      "Proveer un conjunto de clases y utilidades que facilitan la validación y manejo de datos provenientes de un formulario HTML": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Por qué es importante utilizar entornos virtuales?": {
+    "selected": {
+      "Porque virtualenv dejó de existir para Python 3 y ahora es la norma usar python3 -m venv .": 0,
+      "Porque a partir de Python3 todas las dependencias tienen que ser instaladas en entornos virtuales para permitir que las múltiples aplicaciones de la computadora puedan funcionar.": 1,
+      "Porque nos ayuda a prevenir conflictos entre las múltiples bibliotecas y versiones de bibliotecas que los proyectos de nuestra computadora pueden usar.": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Qué valor tiene que ser enviado de manera obligatoria en todas las peticiones POST que salgan de un formulario?": {
+    "selected": {
+      "El token criptográfico que protege la petición contara ataques de Cross Site Scripting": 0,
+      "El token criptográfico que protege la petición contra ataques de Cross Site Request Forgery": 1
+    },
+    "current": 1,
+    "correct": 1
+  },
+  "¿Qué hace la variable DEBUG dentro del archivo settings.py?": {
+    "selected": {
+      "Define el entorno en el que el proyecto está corriendo. Cuando DEBUG es True se agregan otras utilidades al servidor de desarrollo que nos facilitan hacer debugging": 0
+    },
+    "current": 0,
+    "correct": 0
+  },
+  "Si quisiéramos validar dos campos de un formulario que dependen entre sí, ¿qué método deberíamos usar para lograrlo?": {
+    "selected": {
+      "Sobreescribir el método validate, usar los valores de validated_data y aplicar las validaciones": 0,
+      "Sobreescribir el método save, usar los valores de validated_data y aplicar las correcciones": 1,
+      "Sobreescribir el método clean, usar los valores de cleaned_data y aplicar las validaciones": 2
+    },
+    "current": 2,
+    "correct": 2
+  },
+  "¿Cuál es la mejor manera de crear un usuario?": {
+    "selected": {
+      "User.objects.create(username=username, password=password)": 0,
+      "User.objects.create_user(username=username, password=password)": 1
+    },
+    "current": 1,
+    "correct": 1
+  }
+}
